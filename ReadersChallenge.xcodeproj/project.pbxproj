@@ -12,6 +12,7 @@
 		30CF0AAE1D777BC50035551C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CF0AAC1D777BC50035551C /* Main.storyboard */; };
 		30CF0AB01D777BC50035551C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30CF0AAF1D777BC50035551C /* Assets.xcassets */; };
 		30CF0AB31D777BC50035551C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CF0AB11D777BC50035551C /* LaunchScreen.storyboard */; };
+		58164D269D1C2B586630179E /* Pods_ReadersChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576451BC76076243677A22D /* Pods_ReadersChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		30CF0AAF1D777BC50035551C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30CF0AB21D777BC50035551C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30CF0AB41D777BC50035551C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7820E267FF06295359B97032 /* Pods-ReadersChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadersChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReadersChallenge/Pods-ReadersChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		9576451BC76076243677A22D /* Pods_ReadersChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadersChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C493CB3D4B009DE9BA2859 /* Pods-ReadersChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadersChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReadersChallenge/Pods-ReadersChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58164D269D1C2B586630179E /* Pods_ReadersChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				30CF0AA71D777BC50035551C /* ReadersChallenge */,
 				30CF0AA61D777BC50035551C /* Products */,
+				431C73D7C02FAA6EEC90B1B1 /* Pods */,
+				CCB3CEC935E36008DB2C9D88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ReadersChallenge;
 			sourceTree = "<group>";
 		};
+		431C73D7C02FAA6EEC90B1B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4C493CB3D4B009DE9BA2859 /* Pods-ReadersChallenge.debug.xcconfig */,
+				7820E267FF06295359B97032 /* Pods-ReadersChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCB3CEC935E36008DB2C9D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9576451BC76076243677A22D /* Pods_ReadersChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30CF0AB71D777BC50035551C /* Build configuration list for PBXNativeTarget "ReadersChallenge" */;
 			buildPhases = (
+				CA907E40CED0B7F29D1E10AA /* [CP] Check Pods Manifest.lock */,
 				30CF0AA11D777BC50035551C /* Sources */,
 				30CF0AA21D777BC50035551C /* Frameworks */,
 				30CF0AA31D777BC50035551C /* Resources */,
+				12CF1FA28D08277938E423FB /* [CP] Embed Pods Frameworks */,
+				FA912E31EDB424FE5A96BADB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12CF1FA28D08277938E423FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadersChallenge/Pods-ReadersChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA907E40CED0B7F29D1E10AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA912E31EDB424FE5A96BADB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReadersChallenge/Pods-ReadersChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30CF0AA11D777BC50035551C /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		30CF0AB81D777BC50035551C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C493CB3D4B009DE9BA2859 /* Pods-ReadersChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReadersChallenge/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		30CF0AB91D777BC50035551C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7820E267FF06295359B97032 /* Pods-ReadersChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReadersChallenge/Info.plist;
@@ -286,6 +363,7 @@
 				30CF0AB91D777BC50035551C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
